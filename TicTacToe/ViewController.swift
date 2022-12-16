@@ -90,9 +90,9 @@ class ViewController: UIViewController {
         
         for i in 1...9
         {
-            let button = view.viewWithTag(i) as! UIButton
+            let button = view.viewWithTag(i) as! UIButton // searches for i with tag from 1-9
             
-            //button.setImage(nil, for: .normal)    ------Code did not work--------
+            //button.setImage(nil, for: .normal)    ------Code did not work---------
             
             button.setImage(UIImage(named: "playAgainBlank.png"), for: .normal)
         }
@@ -104,6 +104,7 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
     
     
 }
